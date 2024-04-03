@@ -1,0 +1,90 @@
+<div class="travel-agency-container">
+    <div class="travel-agency-image">
+        <div class="travel-agency-content">
+            <h1 class="content-heading">Award-winning holidays</h1>
+            <p class="content-description">
+                Discover breathtaking destinations and create unforgettable memories with our exclusive holiday packages. Unparalleled service and expertise await you.
+            </p>
+            <button type="button" class="learn-more-button">LEARN MORE</button>
+        </div>
+    </div>
+</div>
+
+<style>
+    .travel-agency-container {
+        max-width: 1200px;
+        margin: 50px auto;
+        position: relative; /* For positioning the content over the image */
+        overflow: hidden; /* Ensures the child elements do not break the rounded corners */
+    }
+
+    .travel-agency-image {
+        background-image: url('https://images.pexels.com/photos/3298041/pexels-photo-3298041.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+        background-size: cover;
+        background-position: center;
+        position: relative; /* Relative positioning to allow absolute positioning inside */
+        padding: 4em; /* Padding to provide space for the content */
+        display: flex;
+        justify-content: flex-end; /* Aligns content to the right */
+        align-items: center;
+        height: 500px; /* Fixed height for background image */
+    }
+
+    .travel-agency-content {
+        background: rgba(255, 255, 255, 0.85); /* Semi-transparent white background */
+        padding: 2em;
+        border-radius: 10px; /* Rounded corners for the content box */
+        max-width: 450px; /* Max width for content box */
+        text-align: left; /* Align text to left */
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Shadow for content box */
+    }
+
+    .content-heading {
+        font-size: 36px;
+        color: #333; /* Dark color for heading */
+        margin-bottom: 1em;
+        font-weight: 700;
+    }
+
+    .content-description {
+        font-size: 18px;
+        color: #666; /* Dark color for text */
+        margin-bottom: 1.5em;
+    }
+
+    .learn-more-button {
+        padding: 12px 30px;
+        font-size: 18px;
+        background-color: #FF6347; /* Tomato color for the button */
+        color: #FFFFFF; /* White text color */
+        border: none;
+        border-radius: 20px;
+        cursor: pointer; /* Cursor for clickable button */
+        transition: background-color 0.3s ease; /* Transition for hover effect */
+    }
+
+    .learn-more-button:hover {
+        background-color: #E55347; /* Darker shade for hover effect */
+    }
+
+    @media (max-width: 768px) {
+        .travel-agency-image {
+            height: auto; /* Auto height for smaller screens */
+            padding: 2em;
+        }
+
+        .travel-agency-content {
+            max-width: none; /* Allow content box to fill width on small screens */
+            text-align: center; /* Center text for small screens */
+        }
+
+        .learn-more-button {
+            width: 100%; /* Full width button on small screens */
+            padding: 12px 0; /* Adjust padding for full width */
+        }
+    }
+</style>
+
+<script>
+    // JavaScript code is not required for this static layout
+</script>

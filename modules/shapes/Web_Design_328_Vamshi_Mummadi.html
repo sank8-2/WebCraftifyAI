@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main_container">
+        <div class="image_container1">
+            <img class="img1" src="image1.jpg" alt="Image Loading">
+        </div>
+        <div class="text_container1">
+            <div class="inner_container1">
+                <div>
+                    <p class="heading">Who we are</p>
+                </div>
+                <div>
+                    <p class="content">Ultricies leo integer malesuada nunc vel risus commodo viverra maecenas. 
+                        Lobortis elementum nibh tellus molestie nunc non. Aliquet bibendu
+                    </p>
+                </div>
+                <div>
+                    <button class="button">READ MORE</button>
+                </div>    
+            </div>
+        </div>
+        <div class="text_container2">
+            <div class="inner_container2">
+                <div>
+                    <p class="heading">100 Years of Building USA</p>
+                </div>
+                <div>
+                    <p class="content">Ultricies leo integer malesuada nunc vel risus commodo viverra maecenas. 
+                        Lobortis elementum nibh tellus molestie nunc non. Aliquet bibendum
+                    </p>
+                </div>
+                <div>
+                    <p class="hyperlink">Image from <a href="/">Freepik</a></p>
+                </div>
+                <div>
+                    <button class="button" type="submit">READ MORE</button>
+                </div>
+    
+            </div>
+        </div>
+
+        <div class="image_container2">
+            <img class="img2" src="image2.jpg" alt="Image Loading">
+        </div>
+
+    </div>
+    
+</body>
+</html>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+    body {
+        background-image: linear-gradient(to bottom, white 0%, white 40%, #f1f1f1 40%, #f1f1f1 100%);
+        min-height: 100vh;
+        margin: 0px;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .main_container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        height: 100vh; 
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+        'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    }
+    
+
+    .image_container1{
+        height: 100%;
+        width: 100%;
+    }
+
+    .image_container2{
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+        position: relative;
+    }
+
+    .img1{
+        position: absolute;
+        top: 20px;
+        border-radius: 50%;
+        height: 310px;
+        width: 310px;
+        margin-left: 170px;
+    }
+
+    .img2{
+        border-radius: 50%;
+        height: 270px;
+        width: 270px;
+        position: absolute;
+        top:-50px;
+        left:0;
+        right:0;
+        bottom:0;
+        margin: auto;
+    }
+
+    .text_container1{
+        position: relative;
+        text-align: left;
+        top: 20px; 
+        left: 0;    }
+
+    .text_container2{
+        position: relative;
+        top: 10px; /* Adjust as needed */
+        left: 50px;
+    }
+
+    .inner_container1{
+        padding: 0px 150px 0px 150px;
+        line-height:30px;
+    }
+
+    .inner_container2{
+        padding: 0px 150px 0px 150px;
+        line-height:30px;
+    }
+
+
+    .heading{
+        font-size: 30px;
+        font-weight: 800;
+        color: #1b356a;
+
+    }
+
+    .content{
+        font-size: 20px;
+        font-weight: 500;
+
+    }
+
+    .button{
+        text-align: center;
+        cursor: pointer;
+        height: 50px;
+        width: 200px;
+        border-radius: 50px;
+        color: #1b356a;
+        background-color: none;
+        padding: 2px 2px 2px 2px;
+        font-size: x-small;
+        font-weight: 600px;
+        border: 2px solid #1b356a;
+        letter-spacing: 2px;
+    }
+    
+    @media (max-width:1025px) {
+        .container2{
+            position: absolute;
+            top: 0px;
+            height: 300px;
+            width: 100%;
+            margin: 0px;
+        }
+        .inner_container {
+            display: grid;
+            grid-template-columns: none;
+            grid-template-rows: auto;
+            margin:0 auto;
+        }
+        .container1{
+            top:250px;
+        }
+        .text_box2,.text_box1,.text_box3{
+            width: 450px;
+            height: 200px;
+        }
+    
+      }
+      @media(width>=1921px)
+      {
+        .container2{
+          height: 1100px;
+          width: 100%;
+          margin: 0px;
+      }
+    }
+    
+</style>
+

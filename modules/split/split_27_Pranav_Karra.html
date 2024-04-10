@@ -1,0 +1,63 @@
+<div class="split-container">
+    <div class="image-panel left">
+        <img src="left_image_path.jpg" alt="Grapes Left" />
+    </div>
+    <div class="content-panel">
+        <h2>About Us</h2>
+        <h3>Grape Farm</h3>
+        <p>For a couple of months from the end of July, you can pick grapes fresh from the vine. There is also an onsite farm shop with homemade wine.</p>
+        <button onclick="contactUs()">CONTACT US</button>
+    </div>
+    <div class="image-panel right">
+        <img src="right_image_path.jpg" alt="Grapes Right" />
+    </div>
+</div>
+
+<style>
+    .split-container {
+        display: flex;
+        width: 100%;
+        max-width: 1200px; /* Adjust as needed */
+        margin: auto;
+        overflow: hidden;
+    }
+    .image-panel {
+        flex: 1;
+        position: relative;
+    }
+    .image-panel img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    .content-panel {
+        flex: 0 1 300px; /* Adjust the width as needed */
+        padding: 20px;
+        background-color: #35424a; /* Adjust the color as needed */
+        color: #fff;
+        text-align: center;
+    }
+    .content-panel h2, .content-panel h3 {
+        margin-bottom: 10px; /* Adjust as needed */
+    }
+    .content-panel p {
+        margin-bottom: 20px; /* Adjust as needed */
+    }
+    .content-panel button {
+        padding: 10px 20px; /* Adjust as needed */
+        background-color: #2a2f36; /* Button background color */
+        color: #fff; /* Button text color */
+        border: none;
+        cursor: pointer;
+    }
+    .content-panel button:hover {
+        background-color: #1e2229; /* Button hover state color */
+    }
+</style>
+
+<script>
+    function contactUs() {
+        // Placeholder for contact us button functionality
+        alert('Contact Us functionality not implemented yet.');
+    }
+</script>

@@ -1,0 +1,74 @@
+<div class="container">
+    <div class="content-area">
+        <h1>Welcome to</h1>
+        <h2>Dental Clinic</h2>
+        <p><strong>Address:</strong> 1234 123rd St, New York, NY 10001</p>
+        <p><strong>Phone:</strong> (123) 456-7890</p>
+        <button>Book Online</button>
+    </div>
+    <div class="image-area">
+        <img src="dentist_image.jpg" alt="Dentist" />
+    </div>
+    <div class="services-area">
+        <!-- Repeat this block for each service -->
+        <div class="service-card">
+            <img src="dental_care_icon.png" alt="Dental Care" />
+            <h3>Dental Care</h3>
+            <p>Comprehensive dental care from the experts.</p>
+        </div>
+        <!-- ... other services ... -->
+    </div>
+</div>
+
+<style>
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        max-width: 1200px;
+        margin: auto;
+    }
+    .content-area {
+        flex: 1;
+    }
+    .image-area {
+        flex: 1;
+        padding: 20px;
+    }
+    .image-area img {
+        border-radius: 50%;
+        width: 80%; /* Adjust size as needed */
+        display: block;
+        margin-left: auto; /* Align to the right */
+    }
+    .services-area {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+    }
+    .service-card {
+        background-color: #f96c50; /* Orange color */
+        border-radius: 20px; /* Rounded corners */
+        padding: 20px;
+        width: 200px; /* Adjust width as needed */
+        text-align: center;
+    }
+    .service-card img {
+        width: 50px; /* Adjust icon size as needed */
+        height: auto;
+        margin-bottom: 10px;
+    }
+    button {
+        background-color: #333;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        margin-top: 20px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    button:hover {
+        background-color: #555;
+    }
+</style>

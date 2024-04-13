@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grid Layout</title>
+<style>
+  body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    height: 100vh;
+  }
+
+  .square {
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Added to position text absolutely */
+  }
+
+  .square img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  /* Added styling for the text */
+  .text {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="square">
+    <img src="images/i1.png">
+  </div>
+  <div class="square" style="position: relative;"> <!-- Added position:relative for proper positioning -->
+    <img src="images/i2.png">
+    <div class="text">WHAT WE DO</div> <!-- Added text here -->
+  </div>
+  <div class="square">
+    <img src="images/i3.png">
+  </div>
+  <div class="square">
+    <img src="images/i4.png">
+    <div class="text">ABOUT US</div> <!-- Added text here -->
+  </div>
+  <div class="square">
+    <img src="images/i5.png">
+  </div>
+  <div class="square">
+    <img src="images/i6.png">
+    <div class="text">WHO WE ARE</div> <!-- Added text here -->
+  </div>
+</div>
+</body>
+</html>

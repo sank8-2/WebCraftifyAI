@@ -1,0 +1,96 @@
+<div class="content-wrapper">
+    <div class ="top-half">
+    </div>
+    <div class="bottom-half">
+    </div>
+    <div class="people-section">
+        <div class="text-section">
+            <h1>Our People</h1>
+            <p>Quis aute iure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+            <p>Image from <strong><a href="https://images.pexels.com/photos/433308/pexels-photo-433308.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">here</a></strong> </p>
+        </div>
+        <button class="button">CONTACT US</button>
+    </div>
+    <div class="image-section">
+        <img class="img" src="https://images.pexels.com/photos/433308/pexels-photo-433308.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+    </div>
+    
+</div>
+
+<style>
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.top-half {
+    background-color: #FF8B33;
+    flex: 1;
+    z-index: 1;
+}
+
+.bottom-half {
+    background-color: #D0D3D4
+;
+    flex: 1;
+    z-index: 1;
+}
+
+.text-section {
+    width: 50%;
+}
+
+.people-section {
+    position: absolute;
+    top: 36%;
+    left: 10%;
+    width: 35%; 
+    height: 50%; 
+    background-color: white; 
+    z-index: 3;
+}
+
+.text-section {
+    margin-left: 6%;
+    width: 90%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.text-section h1 {
+    margin-top: 15%;
+}
+
+.text-section p {
+    margin-top: 10%;
+}
+
+
+.button {
+    background-color: #ff6a00; 
+    margin-left: 6%;
+    margin-top: 5%;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5%;
+}
+
+.img {
+    width: 50%;
+    height: 60%;
+}
+
+.image-section {
+    margin-left: 28%;
+    margin-top: 7%;
+    width: 120%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+}
+</style>
+
+

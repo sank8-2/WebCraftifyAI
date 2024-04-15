@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Split Web Page</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: white;
+        display: flex;
+        height: 100vh;
+    }
+    .left-side, .right-side {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .right-side {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 100px);
+        grid-gap: 10px;
+    }
+    .grid-item {
+        width: 100px;
+        height: 100px;
+        background-color: lightblue;
+    }
+    .text-container {
+        text-align: center;
+        margin-top: 20px;
+    }
+    button {
+        padding: 10px 20px;
+        background-color: rgba(255, 165, 0, 0.5); /* Orange with 50% opacity */
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    .contact-info {
+        color: rgba(255, 165, 0, 1); /* Orange color */
+    }
+</style>
+</head>
+<body>
+    <div class="left-side">
+        <img src="https://via.placeholder.com/500" alt="Big Image">
+    </div>
+    <div class="right-side">
+        <div class="text-container">
+            <h2>ABOUT LINDA</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non feugiat lorem. Duis vel justo eget felis sagittis viverra.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non feugiat lorem. Duis vel justo eget felis sagittis viverra.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non feugiat lorem. Duis vel justo eget felis sagittis viverra.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non feugiat lorem. Duis vel justo eget felis sagittis viverra.
+            </p>
+            <div class="contact-info">
+                <p>Phone: +123456789</p>
+                <p>Location: 123 Street, City</p>
+                <p>Mail: example@example.com</p>
+            </div>
+            <button>Click me</button>
+        </div>
+    </div>
+</body>
+</html>

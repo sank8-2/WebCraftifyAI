@@ -1,0 +1,88 @@
+<div class="container">
+  <div class="circle"></div>
+  <div class="card">
+    <h1 style="margin-top: -5px;">Luxury homes in the South of France</h1>
+    <p>Discover our selection of villas and apartments with stunning views. Enjoy modern design, spacious rooms, and premium amenities. Perfect for those who expect the best in luxury and comfort.</p>
+    <button>Learn More</button>
+  </div>
+  <div class="decorative-circle-small"></div>
+  <div class="decorative-circle-large"></div>
+</div>
+
+<style>
+  body {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start; /* Align to the start */
+      background-color: #efefef;
+      min-height: 100vh;
+      padding-top: 60px; /* Provide some spacing from the top */
+    }
+    .container {
+      position: relative;
+      width: 400px; /* Set a fixed width for the card */
+      padding-top: 50px; /* Adjust the padding to ensure the circle is not cut off */
+    }
+    .card {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      background: #ffffff;
+      padding: 20px;
+      position: relative;
+      margin-top: 255px;
+      z-index: 2; /* Higher z-index to ensure the card is above the image */
+    }
+    .circle {
+      width: 350px;
+      height: 350px;
+      background-image: url('your_img.jpg');
+      background-size: cover;
+      border-radius: 50%;
+      position: absolute;
+      top: 0; /* Position the top edge of the image at the top edge of the card */
+      left: 0; /* Position the left edge of the image at the left edge of the card */
+      transform: translate(-50%, 0%); /* Shift the image to the top left corner */
+      z-index: 1; /* Lower z-index to ensure the image is behind the card */
+    }
+.card p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 24px;
+}
+.card button {
+  padding: 10px 24px;
+  font-size: 16px;
+  text-transform: uppercase;
+  background: #ff8c00;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.card button:hover {
+  background-color: #e67e00;
+}
+.decorative-circle-small {
+  width: 90px;
+  height: 90px;
+  border: 22px solid #FFA500; /* Adjust the thickness as needed */
+  border-radius: 50%;
+  position: absolute;
+  top: 0%; /* Position the small circle relative to the top of the container */
+  right: 10%; /* Position the small circle relative to the right of the container */
+  z-index: -1;
+  background-color: transparent; /* Make the inside of the circle transparent */
+}
+
+
+.decorative-circle-large {
+  width: 75px;
+  height: 75px;
+  background-color: #FFA500;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 255px; /* Adjust so that half of the circle is visible */
+  right: -100px; /* Adjust so that half of the circle is visible */
+  z-index: -1;
+}
+</style>

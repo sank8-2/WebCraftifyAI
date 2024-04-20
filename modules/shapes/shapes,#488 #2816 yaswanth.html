@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main_container">
+        <div class="ring1"></div>
+        <div class="ring2"></div>
+        <div class="ring3"></div>
+
+        <div class="inner_container">
+            <div class="image_container">
+                <!-- <img src="image.jpg" alt="Image Loading" class="image"> -->
+            </div>
+            <div class="text_container">
+                <form action="none">
+                    <p class="heading">Join Our Newsletter</p>
+                    <label for="Name">Name</label>
+                    <br>
+                    <input type="text" placeholder="  Enter your Name">
+                    <br>
+                    <label for="Email">Email</label>
+                    <br>
+                    <input type="text" placeholder="  Enter a valid email address">
+                    <br>
+                    <label for="Message">Message</label>
+                    <br>
+                    <textarea name="Message" class="text_area"  placeholder=" Enter your message"></textarea>
+                    <button type="submit" class="button">SUBMIT</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</body>
+<style>
+    body{
+        background: #ccccb4;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande','Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+        position: relative;
+    }
+    .main_container{
+        position: relative;
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .inner_container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .ring1{
+        position: absolute;
+        z-index: 3;
+        height:110px;
+        width: 110px;
+        border-radius: 50%;
+        border: solid 35px #eaeade;
+        background: transparent;
+        left: 270px;
+        top: 50px;
+    }
+    .ring2{
+        position: absolute;
+        z-index: 3;
+
+        height:170px;
+        width:170px;
+        border-radius: 50%;
+        background:#eaeade;
+        z-index: 100;
+        right: 470px;
+        top: 400px;
+    }
+    .ring3{
+        position: absolute;
+        z-index: 3;
+
+        height:50px;
+        width: 50px;
+        border-radius: 50%;
+        border: solid 15px white;
+        background: transparent;
+        left: 790px;
+        top: 590px;
+    }
+    .image_container{
+        position: absolute;
+        top: 30px;
+        height: 550px;
+        width: 550px;
+        border-radius: 50%;
+        background-image: url("image.jpg");
+        object-fit: contain;
+        background-size: contain;
+        background-position: center;
+    }
+    .image{
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+    }
+
+    .text_container{
+        position: absolute;
+        z-index: 2;
+        height:320px;
+        width: 350px;
+        background-color: white;
+        top: 320px;
+        left:310px;
+        padding: 20px;
+        border-radius: 10px;
+        justify-items: center;
+        padding-left: 30px;
+    }
+    .heading{
+        font-size: 30px;
+        margin-top: 8px;
+    }
+    label{
+        font-size: 10px;
+    }
+    input {
+        height: 30px;
+        width: 330px;
+        border-radius: 5px;
+        border: none;
+        margin: 5px 0px 5px 0px;
+    }
+    .text_area{
+        height: 50px;
+        width: 330px;
+        margin: 5px 0px 5px 0px;
+        border-radius: 5px;
+
+    }
+    .button{
+        height: 50px;
+        width: 340px;
+        color: black;
+        background-color: #ccccb4;
+        font-weight: 600;
+        padding: 10px;
+        border: none;
+        border-radius: 10px;
+    }
+
+    input,textarea{
+        background-color: #f1f1f1;
+    }
+
+    .hyperlink{
+        font-weight: 100;
+    }
+
+
+</style>
+</html>

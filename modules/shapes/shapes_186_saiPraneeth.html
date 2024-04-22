@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Welcome to Our Company</title>
+<style>
+    body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        font-family: 'Arial', sans-serif;
+        background-color: #333333;
+    }
+    .page-container {
+        display: flex;
+        width: 100%;
+        height: 100%;
+    }
+    .section {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        color: white;
+        padding: 5%;
+    }
+    .volunteer-section {
+        background: linear-gradient(0deg, rgba(51, 51, 51, 0.6), rgba(0, 0, 0, 0.6)), 
+                    url(images_and_icons/group1.jpeg) center / cover no-repeat;
+    }
+    .podcast-section {
+        background: linear-gradient(0deg, rgba(51, 51, 51, 0.6), rgba(0, 0, 0, 0.6)), 
+                    url(images_and_icons/group2.jpg) center / cover no-repeat;
+    }
+    .subtitle {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    .title {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+    .info {
+        font-size: 1rem;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    .read-more-btn, .submit-btn {
+        border: 2px solid white;
+        background: transparent;
+        padding: 1rem 2rem;
+        color: white;
+        cursor: pointer;
+        font-size: 1rem;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+        transition: all 0.3s ease;
+    }
+    .read-more-btn:hover, .submit-btn:hover {
+        background: white;
+        color: #333333;
+    }
+    .email-input {
+        width: 80%;
+        padding: 1rem;
+        border: none;
+        margin-bottom: 1rem;
+    }
+    .email-input::placeholder {
+        font-size: 1rem;
+        color: #e8e8e8;
+    }
+
+    @media screen and (max-width: 768px){
+        .page-container {                
+            flex-direction: column;
+        }
+    }
+</style>
+</head>
+<body>
+
+<div class="page-container">
+    <div class="section volunteer-section">
+        <span class="subtitle">EXPANDING YOUR REACH</span>
+        <span class="title">Become A Volunteer</span>
+        <span class="info">Join us and make a difference with your passion and dedication in various community-driven projects.</span>
+        <button class="read-more-btn">READ MORE</button>
+    </div>
+    <div class="section podcast-section">
+        <span class="subtitle">EXPANDING YOUR REACH</span>
+        <span class="title">Weekly Podcasts</span>
+        <input type="email" class="email-input" placeholder="Enter a valid email address">
+        <button class="submit-btn">SUBMIT</button>
+    </div>
+</div>
+
+
+</body>
+</html>

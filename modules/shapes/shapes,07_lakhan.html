@@ -1,0 +1,65 @@
+<div>
+    <!-- Circles and rectangle for the layout -->
+    <div class="circle large-circle"></div>
+    <div class="circle medium-circle"></div>
+    <div class="circle small-circle"></div>
+    <div class="content-box">
+        <h2>Quick Reading</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vehicula pretium risus eget aliquet. Nulla facilisi.</p>
+        <button>Read more</button>
+    </div>
+</div>
+
+<style>
+    .circle {
+        border-radius: 50%;
+        position: absolute;
+    }
+    .large-circle {
+        width: 300px;
+        height: 300px;
+        background-color: #a2e8e4; /* Adjust the color */
+        top: 20px;
+        left: 50px;
+    }
+    .medium-circle {
+        width: 100px;
+        height: 100px;
+        background-color: #80ded9; /* Adjust the color */
+        top: 60px;
+        left: 250px;
+    }
+    .small-circle {
+        width: 50px;
+        height: 50px;
+        background-color: #5ecdc4; /* Adjust the color */
+        top: 100px;
+        left: 20px;
+    }
+    .content-box {
+        position: relative;
+        width: 200px;
+        padding: 20px;
+        background-color: #34a7a4; /* Adjust the color */
+        top: 120px;
+        left: 100px;
+        z-index: 1;
+    }
+    h2, p, button {
+        margin: 0;
+        padding: 0;
+        color: white;
+    }
+    button {
+        margin-top: 20px;
+        padding: 10px;
+        background-color: #008080; /* Adjust the color */
+        border: none;
+        color: white;
+        cursor: pointer;
+    }
+</style>
+
+<script>
+    // You don't need JavaScript for the shapes or layout
+</script>

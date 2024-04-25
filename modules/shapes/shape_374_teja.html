@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agency Promotion</title>
+    <style>
+        .travel-agency-container {
+            max-width: 1200px;
+            margin: 50px auto;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .travel-agency-image {
+            background-image: url('https://images01.nicepagecdn.com/page/69/52/html-template-695244.jpg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            padding: 4em;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            height: 500px;
+        }
+
+        .travel-agency-content {
+            background: rgba(255, 255, 255, 0.85);
+            padding: 2em;
+            border-radius: 10px;
+            max-width: 450px;
+            text-align: left;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .content-heading {
+            font-size: 36px;
+            color: #333;
+            margin-bottom: 1em;
+            font-weight: 700;
+        }
+
+        .content-description {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 1.5em;
+        }
+
+        .learn-more-button {
+            padding: 12px 30px;
+            font-size: 18px;
+            background-color: #FF6347;
+            color: #FFFFFF;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .learn-more-button:hover {
+            background-color: #E55347;
+        }
+
+        @media (max-width: 768px) {
+            .travel-agency-image {
+                height: auto;
+                padding: 2em;
+            }
+
+            .travel-agency-content {
+                max-width: none;
+                text-align: center;
+            }
+
+            .learn-more-button {
+                width: 100%;
+                padding: 12px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="travel-agency-container">
+        <div class="travel-agency-image">
+            <div class="travel-agency-content">
+                <h1 class="content-heading">Award-winning holidays</h1>
+                <p class="content-description">
+                    Discover breathtaking destinations and create unforgettable memories with our exclusive holiday packages. Unparalleled service and expertise await you.
+                </p>
+                <button type="button" class="learn-more-button">LEARN MORE</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

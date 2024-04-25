@@ -1,0 +1,66 @@
+<div class="split-container">
+    <div class="split" id="left">
+      <!-- Content for the left half of the page -->
+      <img src="C:\Users\sanju\SplitAnimation-1\modules\split\images_and_icons\th.jpeg">
+    </div>
+    <div class="split" id="right">
+      <!-- Content for the right half of the page -->
+     <h2>About Us</h2>
+     <div class="align">Paws & Claws Pet Emporium is a leading provider of premium pet products and services,
+         dedicated to catering to the needs of beloved pets and their owners. 
+         With a commitment to excellence and a passion for animals, we offer a wide range of high-quality products, 
+         from nutritious pet food and treats to stylish accessories and grooming supplies.</div>
+    </div>
+  </div>
+
+
+  
+ 
+  <style>
+    /* Apply styles for splitting the page into halves */
+    .split-container {
+      display: flex;
+    }
+    
+    .split {
+      flex: 1;
+      height: 100vh; /* Adjust the height as needed */
+      overflow: auto; /* Add scroll if content exceeds height */
+      display: flex;
+      flex-direction: column; /* Stack content vertically */
+      justify-content: flex-start; /* Align content at the top */
+      align-items: center; /* Center content horizontally */
+    }
+    #left {
+      flex: 3; /* 3/4 of the container */
+      padding:30px
+    }
+
+    #right {
+      flex: 1; /* 1/4 of the container */
+    }
+    .align {
+      text-align: justify;
+    }
+    h2 {
+      margin-top: 180px; /* Adjust the margin to create space */
+    }
+    /* Animation */
+    @keyframes scaleImage {
+      from {
+        width: 0;
+        height: 0;
+      }
+      to {
+        width: 300px;
+        height: 200px;
+      }
+    }
+
+    img {
+      animation: scaleImage 1s ease-in-out; /* Apply animation to the image */
+    }
+  </style>
+
+
+  

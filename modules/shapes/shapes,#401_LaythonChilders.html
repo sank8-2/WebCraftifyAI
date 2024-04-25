@@ -1,0 +1,112 @@
+<div class="contact-card">
+    <div class="card-header">
+        <img src="./images_and_icons/profilePicture.jpg" alt="Person Image" class="person-image">
+        <div class="person-info">
+            <h2 class="person-name">John Doe</h2>
+            <p class="person-title">Software Developer</p>
+        </div>
+    </div>
+    <div class="card-body">
+        <p class="contact-info"><strong>Email:</strong> john.doe@example.com</p>
+        <p class="contact-info"><strong>Phone:</strong> +123 456 7890</p>
+    </div>
+    <div class="card-footer">
+        <button class="message-button">Message</button>
+    </div>
+</div>
+
+<style>
+    .contact-card {
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        padding: 16px;
+        width: 100%;
+        max-width: 400px;
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+        margin: 16px auto;
+        transition: box-shadow 0.2s ease-in-out;
+    }
+
+    .contact-card:hover {
+        box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .card-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 12px;
+    }
+
+    .person-image {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-right: 12px;
+    }
+
+    .person-info {
+        flex-grow: 1;
+    }
+
+    .person-name {
+        margin: 0;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .person-title {
+        margin: 0;
+        font-size: 14px;
+        color: #666;
+    }
+
+    .card-body {
+        margin-bottom: 12px;
+    }
+
+    .contact-info {
+        margin: 4px 0;
+        font-size: 14px;
+    }
+
+    .card-footer {
+        text-align: center;
+    }
+
+    .message-button {
+        background-color: #007BFF;
+        color: white;
+        padding: 8px 16px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: bold;
+        transition: background-color 0.2s ease-in-out;
+    }
+
+    .message-button:hover {
+        background-color: #0056b3;
+    }
+
+    @media (max-width: 480px) {
+        .contact-card {
+            padding: 12px;
+        }
+
+        .person-image {
+            width: 40px;
+            height: 40px;
+        }
+    }
+</style>
+
+<script>
+    // You can add JavaScript here if needed for functionality such as opening a messaging application when the button is clicked.
+    const messageButton = document.querySelector('.message-button');
+    
+    messageButton.addEventListener('click', () => {
+        console.log('Message button clicked!');
+        // Add your messaging logic here
+    });
+</script>

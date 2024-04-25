@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Image Layout with Overlay</title>
+<style>
+  body, html {
+    height: 100%;
+    margin: 0;
+  }
+  .container {
+    display: flex;
+    height: 100%;
+    position: relative; /* Ensures that child absolute positioning is relative to this container */
+  }
+  .image-container {
+    position: absolute;
+    top: 0;
+    left: 25%; /* Position to the left */
+    right: 0; /* Stretch to the right */
+    bottom: 0; /* Stretch to the bottom */
+    overflow: hidden; /* Ensures no scrollbars appear if the image is too large */
+  }
+  .image-container img {
+    display: block; /* Removes any extra space below the image */
+    width: 100%; /* Ensures the image stretches to cover the container */
+    height: 100%; /* Ensures the image stretches to cover the container */
+    object-fit: cover; /* Ensures the image covers the container without losing its aspect ratio */
+  }
+  .left-section {
+    background-color: #800080;
+    flex: 3;
+  }
+  .right-section {
+    background-color: #800080;
+    flex: 4;
+    position: relative; /* Needed for absolute positioning of the overlay box */
+  }
+  .overlay-box {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background for the overlay */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%; /* Adjust the width as needed */
+    height: 50%; /* Adjust height as needed */
+    z-index: 10; /* Makes sure the box is above all other content */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+  .overlay-box h1 {
+    font-size: 2.5em; /* Adjust font-size as needed */
+    color: #333; /* Text color */
+    margin: 10px 0;
+  }
+  .overlay-box p {
+    font-size: 1.5em; /* Adjust font-size as needed */
+    color: #333; /* Text color */
+    margin: 5px 0;
+    font-family: 'Arial', sans-serif; /* Adjust font-family as needed */
+  }
+  .action-button {
+    background-color: orange; /* Button background color */
+    border: none; /* Removes the default border */
+    color: white; /* Button text color */
+    padding: 10px 20px; /* Button padding */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px; /* Button text font size */
+    margin: 4px 2px;
+    cursor: pointer; /* Changes the cursor to a pointer on hover */
+    border-radius: 4px; /* Rounds the corners of the button */
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="left-section">
+    <!-- Left section content goes here -->
+  </div>
+  <div class="right-section">
+    <!-- Right section content goes here -->
+    <div class="overlay-box">
+      <h1>Business Expertise and Dedicated team to meet clients demands</h1>
+      <!-- Button you can link to your desired page -->
+      <a href="your-link.html" class="action-button">Read More</a>
+    </div>
+  </div>
+  <div class="image-container">
+    <img src="https://images.pexels.com/photos/1181400/pexels-photo-1181400.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Business meeting">
+
+</div>
+</div>
+</body>
+</html>

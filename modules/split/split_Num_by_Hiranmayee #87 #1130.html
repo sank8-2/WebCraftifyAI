@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Two-Tone Web Page</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  .container {
+    display: flex;
+    height: 100vh;
+  }
+
+  .left-half {
+    width: 50%;
+    background-color: #002147; /* Dark blue color */
+    color: white;
+    padding: 20px;
+  }
+
+  .right-half {
+    width: 50%;
+    background-color: #000000; /* Black color */
+    padding: 20px;
+  }
+
+  .sub-header {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .header {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+
+  .paragraph {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .bullet-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  .bullet-list li {
+    color:white;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  .bullet-list li::before {
+    content: '';
+    width: 16px;
+    height: 16px;
+    background-image: url('https://via.placeholder.com/16'); /* Placeholder image URL */
+    background-size: cover;
+    margin-right: 10px;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="left-half">
+    <div class="sub-header">ABOUT</div>
+    <div class="header">A Founder Branding Agency</div>
+    <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam aliquet nulla id ex tincidunt commodo. Vestibulum nec mauris vitae elit luctus vestibulum. Donec ut felis vel lacus volutpat consequat. Aliquam erat volutpat. Phasellus sit amet magna sed massa suscipit eleifend.</p>
+  </div>
+  <div class="right-half">
+    <ul class="bullet-list">
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </ul>
+  </div>
+</div>
+
+</body>
+</html>

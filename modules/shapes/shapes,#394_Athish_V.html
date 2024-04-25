@@ -1,0 +1,97 @@
+<div class="container">
+    <div class="half-white"></div>
+    <div class="half-gray"></div>
+    
+    <div class="circle-image">
+      <img src="image.jpg" alt="Safari">
+      <div class="circle-bottom-right"></div>
+    </div>
+
+    <div class="content-box">
+      <h1>African Safari Tours & Holidays</h1>
+      <p>Nihil numquam omnis sed fuga explicabo aliquet sagittis. Ita soluta perferendis et nisi incidunt fuga tempora accusamus.</p>
+      <p></p>
+      <p>Nihil numquam omnis sed fuga</p>
+      <p><br></p>
+      <a href="#" style="padding: 10px 40px; border-radius: 25px; color: white;">Read More</a>
+    </div>
+    
+  </div>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      position: relative;
+      z-index: 0;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+    .half-white, .half-gray {
+      flex: 1;
+    }
+    .half-white {
+      background-color: #FFFFFF;
+    }
+    .half-gray {
+      background-color: #CCCCCC;
+    }
+    .circle-image {
+      position: absolute;
+      top: 50%;
+      left: 51%;
+      transform: translate(-50%, -50%);
+      width: 500px;
+      height: 500px;
+      z-index: 1;
+    }
+    .circle-image img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Added shadow to the circular image */
+    }
+    .circle-bottom-right {
+      position: absolute;
+      width: 130px;
+      height: 130px;
+      background-color: #FF8C00; /* Dark orange for button */
+      border-radius: 50%;
+      bottom: 0px;
+      right: -20px;
+      z-index: 2;
+    }
+    .content-box {
+      position: absolute;
+      top: 60%;
+      left: 30%;
+      transform: translate(-50%, -50%);
+      background-color: white; /* Changed to white */
+      color: #333; /* Darkened text color */
+      padding: 20px;
+      border-radius: 20px;
+      max-width: 350px;
+      z-index: 2;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2); /* Added shadow to the content box */
+    }
+    .content-box h1 {
+      font-family: 'Roboto', sans-serif;
+      margin-bottom: 10px;
+    }
+    .content-box p {
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+    .content-box a {
+      background-color: #FF8C00; /* Dark orange for button */
+      padding: 10px 40px;
+      border-radius: 25px;
+      color: white;
+      text-decoration: none;
+    }
+  </style>

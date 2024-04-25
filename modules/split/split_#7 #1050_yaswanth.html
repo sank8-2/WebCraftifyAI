@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Red and Blue Web Page</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        display: flex;
+        flex-direction: row;
+        height: 100vh; /* Makes the container full height */
+    }
+    .left-side {
+        flex: 1;
+        background-color: darkred;
+        color: white;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .right-side {
+        flex: 1;
+        background-color: darkblue;
+        color: white;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    button {
+        padding: 10px 20px;
+        background-color: white;
+        color: darkblue;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <div class="left-side">
+        <h1>How is our process?</h1>
+        <p>This is the paragraph text for the left side.</p>
+        <button>Search</button>
+    </div>
+    <div class="right-side">
+        <h1>Who we are?</h1>
+        <p>This is the paragraph text for the right side.</p>
+        <button>Search</button>
+    </div>
+</div>
+
+</body>
+</html>

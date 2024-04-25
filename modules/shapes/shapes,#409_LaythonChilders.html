@@ -1,0 +1,79 @@
+<div class="profile-card">
+    <div class="profile-image">
+        <img src="./images_and_icons/profilePicture.jpg" alt="Profile Picture">
+    </div>
+    <div class="profile-info">
+        <h2 class="profile-name">John Doe</h2>
+        <p class="profile-description">This is a longer profile description! This is a longer profile description!</p>
+        <div class="profile-buttons">
+            <button class="profile-button">Profile</button>
+            <button class="follow-button">Follow</button>
+        </div>
+    </div>
+</div>
+
+<style>
+    .profile-card {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 300px;
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        text-align: center;
+    }
+
+    .profile-image {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin: 0 auto 20px;
+        float: left;
+    }
+
+    .profile-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .profile-info {
+        margin-bottom: 20px;
+    }
+
+    .profile-name {
+        margin-bottom: 5px;
+        font-size: 1.2em;
+        margin-left: 10px;
+    }
+
+    .profile-description {
+        margin-bottom: 15px;
+        color: #666666;
+    }
+
+    .profile-buttons {
+        clear: both;
+        text-align: center;
+    }
+
+    .profile-buttons button {
+        padding: 8px 20px;
+        margin-right: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: #007bff;
+        color: #ffffff;
+        font-size: 0.9em;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .profile-buttons button:hover {
+        background-color: #0056b3;
+    }
+</style>

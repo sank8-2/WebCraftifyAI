@@ -1,0 +1,107 @@
+<div class="online-testing-container">
+    <div class="online-testing-image"></div>
+    <div class="online-testing-content">
+        <h1 class="content-heading">Online Testing Platform</h1>
+        <p class="content-description">
+            Explore the intersection of technology and education with our versatile testing solutions. Navigate through intricate assessments with ease and enhance your learning experience with us.
+        </p>
+        <button type="button" class="read-more-button">READ MORE</button>
+    </div>
+</div>
+
+<style>
+    .online-testing-container {
+        display: flex;
+        max-width: 1200px; /* Set a max-width for better spacing */
+        height: auto; /* Auto height for intrinsic space management */
+        padding: 30px; /* Reduced padding */
+        box-sizing: border-box;
+        margin: 50px auto; /* More margin for centering */
+        background: #ffffff; /* Pure white background */
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Softer shadow */
+        border-radius: 8px; /* Rounded corners */
+        overflow: hidden; /* Ensures the child elements do not break the rounded corners */
+    }
+
+    .online-testing-image {
+        background-image: url('https://global-uploads.webflow.com/619e15d781b21202de206fb5/623b0aa81f62670d19d49d2f_What%20are%20the%2011%20ways%20your%20company%20can%20do%20software%20testing%20more%20efficiently_%202-100%20(1).jpg'); /* Update with the correct image URL */
+        background-size: cover;
+        background-position: center;
+        flex: 1; /* Dynamic sizing for image */
+        min-width: 300px; /* Minimum width for image */
+    }
+
+    .online-testing-content {
+        flex: 2; /* More space for content */
+        padding: 2em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start; 
+        border-left: 6px solid #007bff; /* Accent color for the design */
+    }
+
+    .content-heading {
+        font-size: 36px; /* Larger font size */
+        color: #0056b3; /* Darker blue color */
+        margin: 0 0 24px 0; /* Adjusted margins */
+        font-weight: 700; /* Bolder font weight */
+        line-height: 1.1; /* Tighter line-height for heading */
+    }
+
+    .content-description {
+        font-size: 18px; /* Larger font size for readability */
+        color: #333333; /* Darker font color for contrast */
+        margin-bottom: 32px; /* More spacing */
+        line-height: 1.6; /* Increased line-height for better readability */
+        max-width: 80%; /* Max-width to control text line length */
+    }
+
+    .read-more-button {
+        padding: 12px 30px; /* Larger padding */
+        font-size: 18px; /* Larger font size */
+        background-color: #0056b3; /* Darker blue color */
+        border-radius: 20px; /* Rounded button edges */
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Button shadow for depth */
+        transition: all 0.3s ease; /* Smooth transition for all hover effects */
+    }
+
+    .read-more-button:hover {
+        background-color: #003e7e; /* Even darker blue on hover */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* More pronounced shadow on hover */
+        transform: translateY(-2px); /* Slight raise effect on hover */
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+        .online-testing-container {
+            flex-direction: column;
+            margin: 20px auto; /* Reduced margin on smaller screens */
+        }
+
+        .online-testing-image {
+            height: 250px; /* Reduced height on smaller screens */
+            order: -1; /* Image above content on small screens */
+        }
+
+        .online-testing-content {
+            align-items: center; /* Center align content on small screens */
+            text-align: center; /* Center align text on small screens */
+            border-left: none; /* Remove border on small screens */
+            padding: 1em; /* Smaller padding on small screens */
+        }
+
+        .content-heading {
+            font-size: 28px; /* Smaller font size on small screens */
+        }
+
+        .read-more-button {
+            padding: 10px 25px; /* Smaller padding on small screens */
+            font-size: 16px; /* Smaller font size on small screens */
+        }
+    }
+</style>
+
+<script>
+    // Your script here
+</script>

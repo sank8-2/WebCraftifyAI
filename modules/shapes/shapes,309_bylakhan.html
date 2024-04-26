@@ -1,0 +1,85 @@
+<div class="card">
+    <div class="image-container">
+        <img src="path-to-your-travel-image.jpg" alt="Travel Image">
+    </div>
+    <div class="text-content">
+        <h3>TRAVEL AGENCY</h3>
+        <h2>Get more out of your travel</h2>
+        <p>Image from Freepik</p>
+        <button>LEARN MORE</button>
+    </div>
+</div>
+
+<style>
+.card {
+    position: relative;
+    width: 300px; /* Adjust as needed */
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    background-color: white;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Lift card effect on hover */
+}
+
+.image-container {
+    height: 150px; /* Adjust as needed */
+    background-color: #00B4D8; /* Placeholder color if image doesn't load */
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+}
+
+.text-content {
+    padding: 20px;
+    text-align: left;
+}
+
+h3 {
+    color: #6c757d;
+    font-size: 14px; /* Adjust as needed */
+    margin: 0;
+}
+
+h2 {
+    color: #495057;
+    font-size: 18px; /* Adjust as needed */
+    margin: 5px 0; /* Adjust as needed */
+}
+
+p {
+    color: #6c757d;
+    font-size: 12px; /* Adjust as needed */
+    margin: 0 0 15px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 15px;
+    background-color: #00B4D8;
+    color: white;
+    cursor: pointer;
+    font-size: 14px; /* Adjust as needed */
+    text-transform: uppercase;
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Simple fade-in effect for the card
+    var card = document.querySelector('.card');
+    card.style.opacity = 0;
+    window.setTimeout(function() {
+        card.style.transition = 'opacity 1s';
+        card.style.opacity = 1;
+    }, 100); // fade in after 100ms
+});
+</script>

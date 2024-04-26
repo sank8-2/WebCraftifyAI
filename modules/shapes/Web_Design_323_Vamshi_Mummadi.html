@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main_container">        
+        <div class="img_container">
+            <img class="img" src="image.jpg" alt="Image Loading">
+        </div>
+            <div class="text_container">
+                <div class="text_inner_box">
+                    <p class="heading">Online learning</p>
+                    <p class="content">Vivamus arcu felis bibendum ut tristique et. 
+                        Habitant morbi tristique senectus et netus et malesuada fames. 
+                        Sapien eget mi proin sed libero enim sed.
+                    </p>
+                    <p class="hyperlink">Image from <a href="/">Freepik</a></p>
+                    <button class="button">READ MORE</button>
+                </div>
+
+            </div>
+    </div>
+    
+</body>
+</html>
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Arizonia&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+    body {
+        background-image: linear-gradient(to bottom, #FF4500 50%, #e9f3fc 50%);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-color: #e9f3fc;
+    }
+    
+    .main_container {
+        display: flex;
+        width: 700px;
+        height: 500px;
+        background-color: white;
+        margin: auto;
+        margin-top:5%;
+    }
+
+      .img_container {
+        flex: 1;
+        position: relative;
+        top:50px;
+        right: 50px;
+        width: 450px;
+    }
+
+    .img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        box-shadow: -1px 4px 22px black;
+    }
+
+    .text_container {
+        flex: 1;
+        background-color: white;
+        padding: 20px;
+        border-radius: 5px;
+        z-index: 1; 
+    }
+
+    .heading {
+        font-size: 30px;
+        font-weight: 800;
+        margin-bottom: 10px;
+    }
+
+    .content {
+        font-size: 14px;
+        line-height: 1.5;
+        margin-bottom: 10px;
+    }
+
+    .hyperlink {
+        font-size: 12px;
+        color: #666;
+        margin-bottom: 10px;
+    }
+
+    .hyperlink a {
+        color: #666;
+        text-decoration: none;
+    }
+
+    .button {
+        background-color: black;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s;
+    }
+
+    .button:hover {
+        background-color: #333;
+    }
+</style>

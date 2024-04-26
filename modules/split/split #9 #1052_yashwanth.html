@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Text and Image Layout</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: white;
+        display: flex;
+        height: 100vh;
+    }
+    .left-side, .right-side {
+        width: 50%;
+        height: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+        overflow: auto; /* Enable scrolling if content overflows */
+    }
+    .left-side {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .text-container {
+        text-align: left;
+    }
+    .right-side {
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+</style>
+</head>
+<body>
+    <div class="left-side">
+        <div class="text-container">
+            <h1>01</h1>
+            <p>PRODUCT</p>
+            <h2>Ready to get started?</h2>
+            <p>Nulla facilisi. Donec vestibulum ante a dui.
+                Nulla facilisi. Donec vestibulum ante a dui.
+                Nulla facilisi. Donec vestibulum ante a dui.
+                Nulla facilisi. Donec vestibulum ante a dui.
+            </p>
+            <ul>
+                <li>List item 1</li>
+                <li>List item 2</li>
+                <li>List item 3</li>
+            </ul>
+        </div>
+    </div>
+    <div class="right-side">
+        <img src="https://via.placeholder.com/500" alt="Big Image">
+    </div>
+</body>
+</html>

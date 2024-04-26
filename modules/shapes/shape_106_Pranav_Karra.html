@@ -1,0 +1,81 @@
+<div class="container">
+    <div class="header">
+        <h1>About Us</h1>
+        <h2>We are a Web Design Agency</h2>
+        <button>Contact Us</button>
+    </div>
+    <div class="image">
+        <!-- Replace with your image path -->
+        <img src="path-to-your-image.jpg" alt="Web Design Agency" />
+    </div>
+    <div class="services">
+        <div class="service">
+            <span>🌐</span>
+            <h3>Cloud Solution</h3>
+            <p>Details</p>
+        </div>
+        <div class="service">
+            <span>⚡</span>
+            <h3>Speed Optimization</h3>
+            <p>Details</p>
+        </div>
+        <div class="service">
+            <span>💼</span>
+            <h3>Online Marketing</h3>
+            <p>Details</p>
+        </div>
+        <div class="service">
+            <span>🎨</span>
+            <h3>Website Design</h3>
+            <p>Details</p>
+        </div>
+    </div>
+</div>
+
+<style>
+    .container {
+        max-width: 1200px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+    .header {
+        grid-column: 1 / 2;
+    }
+    .header h1, .header h2 {
+        margin: 0;
+    }
+    .header button {
+        background-color: #ffa500; /* Button color */
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+    .image {
+        grid-column: 2 / 3;
+    }
+    .image img {
+        width: 100%;
+        border-radius: 50%;
+    }
+    .services {
+        grid-column: 1 / 3;
+        display: flex;
+        justify-content: space-between;
+    }
+    .service {
+        background: #fff;
+        border-radius: 15px;
+        padding: 20px;
+        text-align: center;
+        width: 23%;
+    }
+    .service span {
+        font-size: 2rem;
+    }
+</style>
+
+<script>
+    // Optional: JavaScript for interactivity if needed
+</script>

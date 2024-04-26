@@ -1,0 +1,99 @@
+<div>
+    <div class="image-row above">
+        <img src="your_img.jpg" alt="Image 1" class="circle-img img-tl">
+        <img src="your_img.jpg" alt="Image 2" class="circle-img img-tr">
+      </div>
+      
+      <div class="green-block">
+        <h1>Heading Text</h1>
+        <div class="text-content">
+        <p>This is a paragraph inside the green block. Lorem ipsum dolor sit amet, consectetur adipiscing elit.This is a paragraph inside the green block. Lorem ipsum dolor sit amet, consectetur adipiscing elit.This is a paragraph inside the green block. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="button">Learn More</div>
+      </div>
+      
+      <div class="image-row below">
+        <img src="your_img.jpg" alt="Image 3" class="circle-img img-bl">
+        <img src="your_img.jpg" alt="Image 4" class="circle-img img-br">
+      </div>
+</div>
+
+<style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0; /* Adjust the background color to your preference */
+    }
+  
+    .circle-img {
+      border-radius: 50%; /* This makes the image round */
+      display: inline-block;
+      margin: 0 100px; /* Space around the images */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds some shadow for depth */
+      position: relative; /* Establishes a new stacking context */
+      z-index: 2; /* Higher z-index so images appear above the green block */
+    }
+  
+    .image-row {
+      text-align: center;
+      position: relative;
+    }
+  
+    .image-row.above {
+      margin-bottom: -50px; /* Half of the image height to overlap */
+      margin-top: 50px;
+    }
+  
+    .image-row.below {
+      margin-top: -100px; /* Half of the image height to overlap */
+    }
+  
+      /* Specific sizes for each image */
+      .img-tl { width: 170px; height: 170px; } /* Top Left */
+      .img-tr { width: 200px; height: 200px; } /* Top Right */
+      .img-bl { width: 180px; height: 180px; } /* Bottom Left */
+      .img-br { width: 130px; height: 130px; } /* Bottom Right */
+  
+  
+    .green-block {
+      background-color: #76b947;
+      padding: 100px 20px;
+      margin: 0;
+      text-align: center;
+      position: relative; /* Still needs to be relative for z-index to work */
+      z-index: 1; /* Lower than image z-index so images appear on top */
+    }
+  
+    .green-block .text-content {
+      max-width: 50%; /* Or a fixed pixel value */
+      margin: 0 auto; /* This centers the text content div */
+      text-align: center;
+    }
+  
+    h1 {
+      color: white;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+  
+    p {
+      color: white;
+      margin: 15px 0 30px;
+      font-family: Arial, sans-serif;
+    }
+  
+    .button {
+      background-color: white;
+      color: #76b947;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      font-size: 16px;
+      text-align: center;
+      display: inline-block; /* Center button text */
+      position: relative; /* For z-index to work */
+      z-index: 2; /* Same as images to ensure it's above the green block */
+      font-family: Arial, sans-serif;
+    }
+  </style>

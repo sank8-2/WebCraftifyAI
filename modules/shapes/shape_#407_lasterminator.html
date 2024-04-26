@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Image Layout with Overlay</title>
+<style>
+  body, html {
+    height: 100%;
+    margin: 0;
+  }
+  .container {
+    display: flex;
+    height: 100%;
+    position: relative; /* Ensures that child absolute positioning is relative to this container */
+  }
+  .image-container {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    width: 30%; /* Adjust the width to control the size of the image */
+  }
+  .image-container img {
+    display: block; /* Removes any extra space below the image */
+    width: 150%; /* Image width will be as wide as its container */
+    height: auto; /* Keeps the image aspect ratio intact */
+  }
+  .left-section {
+    background-color: #fff;
+    flex: 3;
+  }
+  .right-section {
+    background-color: #800080;
+    flex: 4;
+    position: relative; /* Needed for absolute positioning of the overlay box */
+  }
+  .overlay-box {
+    background-color: #fff; /* White background for the overlay */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%; /* Adjust the width as needed */
+    height: 50%; /* Same as width to keep it square */
+    z-index: 10; /* Makes sure the box is above all other content */
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: right;
+    text-align: right;
+    padding: 010px;
+  }
+  .overlay-box h1 {
+    font-size: 54px;
+    color: skyblue;
+    margin: 10px 0;
+  }
+  .overlay-box p {
+    font-size: 93px;
+    color: skyblue;
+    margin: 5px 0;
+    font-family: 'Times New Roman', Times, serif;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="left-section">
+    <!-- Left section content goes here -->
+  </div>
+  <div class="right-section">
+    <!-- Right section content goes here -->
+    <div class="overlay-box">
+      <!-- Overlay content goes here -->
+      <div class="overlay-box">
+        <h1>About Us</h1>
+        <p>Fashion Trends 2021</p>
+      </div>
+    </div>
+  </div>
+  <div class="image-container">
+    <img src="https://images.pexels.com/photos/13325931/pexels-photo-13325931.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Fashion Image">
+  </div>
+</div>
+
+</body>
+</html>

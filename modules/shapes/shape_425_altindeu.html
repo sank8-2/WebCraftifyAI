@@ -1,0 +1,135 @@
+<div class="centered-square">
+    <img src="images_and_icons/djphoto.jpg" alt="Description of Image" class="main-image">
+    <div class="striped-circle"></div>
+    <div class="small-square">
+        <div class="biography-content">
+            <h2>Biography</h2>
+            <p>Lorem ipsum ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <p>Image from Unsplash</p>
+            <button>Learn More</button>
+        </div>
+    </div>
+    <div class="red-circle"></div>
+    <div class="black-ring"></div>
+</div>
+
+<style>
+    body, html {
+        height: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f0f0f0;
+    }
+
+    .centered-square {
+        margin-bottom: 130px;
+        position: relative;
+        width: 700px;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+    }
+
+    .striped-circle {
+        position: absolute;
+        top: -70px;
+        left: -70px;
+        width: 130px;
+        height: 130px;
+        background: repeating-linear-gradient(
+            135deg,
+            #000000,
+            #000000 5px,
+            transparent 5px,
+            transparent 15px
+        );
+        border-radius: 50%;
+        z-index: 1;
+    }
+
+    .red-circle {
+        position: absolute;
+        width: 250px;
+        height: 250px;
+        background-color: rgba(238,65,71,255);
+        border-radius: 50%;
+        bottom: -85px;
+        right: -85px;
+        z-index: 1;
+    }
+
+    .black-ring {
+        position: absolute;
+        width: 70px;
+        height: 70px;
+        border: 25px solid black;
+        border-radius: 50%;
+        bottom: -190px;
+        right: 130px;
+        background-color: transparent;
+        z-index: 1;
+    }
+
+    .small-square {
+        width: 400px;
+        height: 400px;
+        background-color: rgba(241,241,241,255);
+        position: absolute;
+        bottom: -170px;
+        left: -170px;
+        z-index: 3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+    }
+
+    .biography-content {
+        text-align: left;
+        width: 100%;
+    }
+
+    .biography-content h2 {
+        margin-top: 0px;
+        margin-bottom: 16px;
+        font-size: 50px;
+        color: rgba(124,124,124,255);
+    }
+
+    .biography-content p {
+        font-size: 16px;
+        color: rgba(124,124,124,255);
+        margin-bottom: 16px;
+        line-height: 1.6;
+    }
+
+    .biography-content button {
+        padding: 10px 20px;
+        border: 2px solid black;
+        background-color: transparent;
+        cursor: pointer;
+        font-size: 14px;
+        text-align: left;
+        margin-bottom: 16px;
+        line-height: 1.6;
+    }
+
+    .biography-content button:hover {
+        background-color: black;
+        color: white;
+    }
+</style>
